@@ -8,7 +8,13 @@ body {
   background-color: #292524;
   color: #fafaf9;
   font-family: "Sono", sans-serif;
-  padding: 40px;
+  padding: 48px 64px;
+}
+
+/* Main Layout*/
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .header {
@@ -24,12 +30,11 @@ body {
   gap: 16px;
 }
 
-.fact-form {
-  background-color: #44403c;
-  margin-bottom: 40px;
-  padding: 16px 40px;
-  text-align: center;
+.logo img {
+  width: 68px;
+  height: 68px;
 }
+
 h1 {
   font-size: 42px;
   text-transform: uppercase;
@@ -40,6 +45,20 @@ h1 {
   margin-left: 20px;
 }
 
+.fact-form {
+  background-color: #44403c;
+  margin-bottom: 40px;
+  padding: 16px 40px;
+  text-align: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 48px;
+}
+
+/* Elements */
 .fact {
   font-size: 20px;
   line-height: 1.4;
@@ -69,4 +88,25 @@ h1 {
 
 ul {
   list-style: none;
+}
+
+.source:link,
+.source:visited {
+  color: #a8a29e;
+  text-decoration: none;
+  margin-left: 12px;
+  transition: 0.3s;
+}
+
+.source:hover,
+.source:active {
+  color: #3b82f6;
+}
+
+.btn {
+  font-family: "Coiny", sans-serif;
+  line-height: 1;
+  font-size: 17px;
+  padding: 16px 0 13px;
+  background-image: linear-gradient (135deg, #3b82f6, #ef4444, #16a34a #eab308);
 }
